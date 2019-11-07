@@ -1,6 +1,8 @@
-// note that it's actually reverse array since the input and output are arrays
+// Time complexity : O(N)to swap N/2 element.
+// Space complexity : O(1), it's a constant space solution.
 
-var reverseString = function(s) {
+// note that it's actually reverse array since the input and output are arrays
+const reverseString = function(s) {
     if(s.length < 2) return s
     let index = Math.ceil(s.length/2)
     
@@ -12,3 +14,5 @@ var reverseString = function(s) {
 };
 
 console.log(reverseString(["h","e","l","l","o"]))
+
+
