@@ -16,3 +16,20 @@ const reverseString = function(s) {
 console.log(reverseString(["h","e","l","l","o"]))
 
 
+/* two-pointer approach
+
+  var reverseString = function(s) {
+    /set pointers at start, end initially
+    let i = 0;
+    let j = s.length-1
+    
+    while(i < j){
+        /modify array in place without use of a temp variable
+        [s[i], s[j]] = [s[j], s[i]]
+        
+        i++
+        j--
+    }
+
+};
+*/
